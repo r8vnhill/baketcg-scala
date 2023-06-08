@@ -6,7 +6,7 @@ import observer.AbstractSubject
 
 import scala.collection.mutable
 
-class Player extends AbstractSubject {
+class Player extends AbstractSubject[WinCondition] {
   val _prizes: mutable.ArrayBuffer[Card] = mutable.ArrayBuffer.empty
 
   def removePrize(card: Card): Unit = {
